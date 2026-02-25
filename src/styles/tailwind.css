@@ -3,3 +3,13 @@
 @import "tailwindcss/components";
 
 @import "tailwindcss/utilities";
+
+@layer base {
+  :root {
+    /* Ensure navbar is sticky by default, before JS hydration overrides these */
+    --header-position: sticky;
+    --header-inner-position: relative;
+    --header-top: 1.5rem;
+    --avatar-top: 0.75rem;
+  }
+}
